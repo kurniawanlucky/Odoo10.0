@@ -4,9 +4,7 @@
     'category': 'Sales Management',
     'description': """
 Add Progres information to the sales order.
-===================================================:
-------------------------------------------------------------
-    * Add Information About Delivery Progress
+    * Add Information About Delivery Progress at sale order Tree
 """,
     'author': 'Lucky Kurniawan',
     'website': '',
