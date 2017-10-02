@@ -7,7 +7,7 @@
         <field name="arch" type="xml">
         <data>
             <field name="deprecated" position="after">
-                <field name="parent_id"/>
+                <field name="parent_id" domain="[('id', 'not in', [active_id])]"/>
                 <field name="child_ids">
                    <tree>
                     <field name="code"/>

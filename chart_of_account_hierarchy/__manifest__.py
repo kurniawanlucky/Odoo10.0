@@ -4,11 +4,16 @@
     'category': 'Accounting Management',
     'description': """
 Use Chart of Account Hierarchy.
+============================================
 
 Usage:
+-----------
 - Add Parent Account at: Accounting > Adviser > Chart of Accounts > Parent Account
+
 View:
+--------
 - Accounting > Adviser > Chart of Account Hierarchy
+
 """,
     'author': 'Lucky Kurniawan',
     'website': '',
