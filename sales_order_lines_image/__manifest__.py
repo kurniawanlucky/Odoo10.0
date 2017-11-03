@@ -1,5 +1,5 @@
 {
-    'name': 'Product Image For Order Lines',
+    'name': 'Sales Order Line Product Image',
     'version': '1.1',
     'category': 'Sales Management',
     'description': """
@@ -7,7 +7,7 @@ Add Image For Order Lines.
 ====================================
 Usage:
 -----------------------
-    * Install dusal_web_tree_image(by OCA)
+    * Install web_tree_image(by OCA)
 Feauture:
 -------------------------
     * Add Image at sales order line
@@ -15,7 +15,7 @@ Feauture:
     'author': 'Lucky Kurniawan',
     'website': '',
     'images': [],
-    'depends': ['sale', 'dusal_web_tree_image'],
+    'depends': ['sale', 'web_tree_image'],
     'data': [
         'views/sale_order_views.xml',
     ],
