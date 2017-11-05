@@ -1,4 +1,4 @@
-Sale Order Barcode
+Purchase Order Barcode
 ==========================================================
 
 With Odoo <a href="https://github.com/kurniawanlucky/Odoo10.0">Sale Barcode</a>,
