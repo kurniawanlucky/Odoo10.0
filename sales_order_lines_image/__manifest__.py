@@ -19,6 +19,7 @@ Feauture:
     'data': [
         'views/sale_order_views.xml',
     ],
+    'qweb': ['static/src/xml/widget.xml'],
     'demo': [],
     'test': [],
     'installable': True,
