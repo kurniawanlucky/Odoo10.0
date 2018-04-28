@@ -12,6 +12,7 @@
     "data": [
         'views/hr_employee_views.xml',
     ],
+    "images": ['static/description/icon.png'],
     "license": "AGPL-3",
     "installable": True,
     "application": False,
