@@ -26,7 +26,7 @@ ListView.include({
     get_data: function() {
         var l10n = _t.database.parameters;
         var datepickers = {
-            pickTime: false,
+            pickTime: true,
             startDate: moment({ y: 1900 }),
             endDate: moment().add(200, "y"),
             calendarWeeks: true,
@@ -37,7 +37,7 @@ ListView.include({
                 down: 'fa fa-chevron-down'
                },
             language : moment.locale(),
-            format : time.strftime_to_moment_format(l10n.date_format),
+            format : time.strftime_to_moment_format(l10n.date_format +' '+ l10n.time_format),
         }
         return datepickers;
     },
