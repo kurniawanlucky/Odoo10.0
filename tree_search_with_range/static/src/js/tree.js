@@ -27,6 +27,7 @@ ListView.include({
         var l10n = _t.database.parameters;
         var datepickers = {
             pickTime: true,
+            useSeconds: true,
             startDate: moment({ y: 1900 }),
             endDate: moment().add(200, "y"),
             calendarWeeks: true,
