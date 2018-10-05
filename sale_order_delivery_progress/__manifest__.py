@@ -9,7 +9,7 @@ Add Progres information to the sales order.
     'author': 'Lucky Kurniawan',
     'website': '',
     'images': [],
-    'depends': ['sale_stock'],
+    'depends': ['sale_stock', 'sale_order_dates'],
     'data': [
         'views/sale_order_views.xml',
     ],
@@ -17,4 +17,5 @@ Add Progres information to the sales order.
     'test': [],
     'installable': True,
     'auto_install': False,
+    'application': True,
 }

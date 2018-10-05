@@ -20,5 +20,5 @@
     'images': ['static/description/tree_search_with_range.png'],
     'installable': True,
     'auto_install': False,
-    'application': False,
+    'application': True,
 }

@@ -19,4 +19,5 @@ Add Button to Sales And Purchase.
     'test': [],
     'installable': True,
     'auto_install': False,
+    'application': True,
 }
