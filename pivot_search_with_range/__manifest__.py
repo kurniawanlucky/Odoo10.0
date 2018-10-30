@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'Pivot Search By Range',
+    'name': 'Pivot Search Date By Range',
     'version': '1.1',
     'category': 'web',
-    'summary': 'Pivot view Search by range',
+    'summary': 'Pivot view Search Date by range',
     'website': "https://github.com/kurniawanlucky/Odoo10.0",
     'description': """
-        This module Add search by range.
+        This module Add search date by range.
     """,
     'author': 'Lucky Kurniawan(kurniawanluckyy@gmail.com)',
     'depends': ['web'],

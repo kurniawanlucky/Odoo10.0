@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'Tree or List Search With Range',
+    'name': 'Tree or List Search Date By Range',
     'version': '1.1',
     'category': 'web',
-    'summary': 'Tree or List view Search with range',
+    'summary': 'Tree or List view Search Date by range',
     'website': "https://github.com/kurniawanlucky/Odoo10.0",
     'description': """
-        This module Add search with range.
+        This module Add search date by range.
     """,
     'author': 'Lucky Kurniawan(kurniawanluckyy@gmail.com)',
     'depends': ['web'],

@@ -1,6 +1,6 @@
-Pivot Search With Range
-=======================
-With Odoo <a href="https://github.com/kurniawanlucky/Odoo10.0">Tree or List Search With Range</a>,
+Pivot Search Date By Range
+==========================
+With Odoo <a href="https://github.com/kurniawanlucky/Odoo10.0">Tree or List Search Date by Range</a>,
 You can search with range at pivot.
 
 This module works on pivot page without any pre-configuration, Just install the module and enjoy it.
