@@ -13,7 +13,7 @@ Get Notification After Send Mail.
     "author": "Lucky Kurniawan",
     "website": "https://github.com/kurniawanlucky/Odoo10.0",
     "images": [],
-    "depends": ["mail"],
+    "depends": ["mail", "ir_action_js_notification"],
     "images": ["static/description/icon.png"],
     "demo": [],
     "test": [],
