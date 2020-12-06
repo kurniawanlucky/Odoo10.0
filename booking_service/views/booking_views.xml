@@ -1,0 +1,3 @@
+<odoo>
+	<menuitem id="side_menu_booking" name="Booking" parent="sales_team.menu_base_partner" sequence="5"/>
+</odoo>
