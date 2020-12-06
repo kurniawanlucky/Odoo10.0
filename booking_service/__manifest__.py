@@ -34,6 +34,7 @@ To allow users to create bookings for employees and equipments.
     "test": [],
     "currency": "EUR",
     "license": "AGPL-3",
+    "images": ['static/description/1.png'],
     "installable": True,
     "application": True,
 }
