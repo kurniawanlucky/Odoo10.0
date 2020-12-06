@@ -42,7 +42,7 @@ Location & View Type | Fields / Flow / Function / Triggers
         * Equipments -> Dropdown of equipments (when team is selected, it will auto fill this employees field but it is still editable )
         * Booking Start - > Date Time - Compulsory
         * Booking End -> Date Time – Compulsory (By default, after user fill in the boo ing start, it will auto fill the booking end by booking start + 1 hour, but editable)
-        ![plot](static/description/Customer.png)
+        ![plot](static/description/icon.png)
         * Add a navigation called “Booking Order” which will show all the Sales Order that “is a booking”. In the Sales Order menu, it will only show all Sales Order that is not a booking. When user creates an order from the Booking Order Menu, it will auto tick the “Is a booking”
         * Add a button “Check” next to “Validate”, which will check if the team leader employees and equipments has any calendar event which overlaps for the booking start and booking end time.
             * If yes, highlight a popup saying:
