@@ -18,7 +18,7 @@
     ],
     'demo': [],
     'images': ['static/description/icon.png'],
-    'installable': True,
+    'installable': False,
     'auto_install': False,
     'application': True,
 }

@@ -15,7 +15,7 @@ Add Progres information to the sales order.
     ],
     'demo': [],
     'test': [],
-    'installable': True,
+    'installable': False,
     'auto_install': False,
     'application': True,
 }

@@ -18,7 +18,7 @@
     ],
     'license': "AGPL-3",
     'images': ['static/description/tree_search_with_range.png'],
-    'installable': True,
+    'installable': False,
     'auto_install': False,
     'application': True,
 }

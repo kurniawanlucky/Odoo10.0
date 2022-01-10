@@ -16,7 +16,7 @@
     ],
     'license': "AGPL-3",
     'images': ['static/description/pos_debrand.png'],
-    'installable': True,
+    'installable': False,
     'auto_install': False,
     'application': True,
 }

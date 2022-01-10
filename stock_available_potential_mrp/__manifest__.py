@@ -15,7 +15,7 @@
     ],
     'license': "AGPL-3",
     'images': ['static/description/icon.png'],
-    'installable': True,
+    'installable': False,
     'auto_install': False,
     'application': True,
 }
