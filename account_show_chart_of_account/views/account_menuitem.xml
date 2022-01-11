@@ -1,0 +1,7 @@
+<odoo>
+    <menuitem id="account.menu_action_account_form"
+              action="account.action_account_form"
+              groups="account.group_account_manager"
+              parent="account.account_account_menu"
+              sequence="1"/>
+</odoo>
