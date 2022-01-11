@@ -18,7 +18,7 @@ Feature:
     'author': 'Lucky Kurniawan',
     'website': '',
     'images': [],
-    'depends': ['sale', 'web_tree_image_tooltip'],
+    'depends': ['sale', 'web_tree_images_tooltip'],
     'data': [
         'views/sale_order_views.xml',
     ],
