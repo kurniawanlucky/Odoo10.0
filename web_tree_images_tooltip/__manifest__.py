@@ -4,7 +4,7 @@
 # Copyright 2016 - TODAY Serpent Consulting Services Pvt. Ltd.
 #                            (<http://www.serpentcs.com>)
 # Copyright 2021 Lucky <kurniawnaluckyy@gmail.com>
-# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 {
     "name": "Show images in tree views via tooltip",
