@@ -1,9 +1,8 @@
-# -*- coding: utf-8 -*-
 # © 2021 Lucky Kurniawan <kurniawanluckyy@gmail.com>
-# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 {
     'name': 'Sales Order Line Product Image',
-    'version': '1.1',
+    'version': '15.0.0.1',
     'category': 'Sales Management',
     'description': """
 Add Image For Order Lines.
