@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 {
     'name': 'Sale Customer History - Sale Order',
-    'version': '1.1',
+    'version': '15.0.0.1',
     'category': 'Sale Management',
     'description': """
 Sale Order.

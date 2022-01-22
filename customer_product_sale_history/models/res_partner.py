@@ -14,7 +14,7 @@ class ResPartner(models.Model):
         view_id_form = self.env.ref('sale.sale_order_line_view_form_readonly').id
         return {
             'type': 'ir.actions.act_window',
-            'name': _('Sales'),
+            'name': _('Product Sales'),
             'res_model': 'sale.order.line',
             'target': 'current',
             'domain': [('id', 'in', self.product_sale_history_ids.ids)],
