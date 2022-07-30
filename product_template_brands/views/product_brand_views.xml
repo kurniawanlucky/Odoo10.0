@@ -1,0 +1,66 @@
+<odoo>
+
+    <record id="action_open_brand_products" model="ir.actions.act_window">
+        <field name="name">Product Templates</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">product.template</field>
+        <field name="domain">[('brand_id', '=', active_id)]</field>
+    </record>
+
+    <record id="view_product_brand_form" model="ir.ui.view">
+        <field name="name">product.brand.form</field>
+        <field name="model">product.brand</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="%(action_open_brand_products)d" type="action"
+                            icon="fa-cubes" class="oe_stat_button"
+                            attrs="{'invisible': [('products_count', '&lt;', 0)]}">
+                            <field string="Products" name="products_count" widget="statinfo" />
+                        </button>
+                    </div>
+                    <field name="logo" widget="image" class="oe_avatar" options="{'size': [0, 50]}"/>
+                    <div class="oe_title">
+                        <label for="name" string="Brand Name" class="oe_edit_only"/>
+                        <h1><field name="name"/></h1>
+                    </div>
+                    <group string="Description">
+                        <field name="description" nolabel="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_product_brand_filter" model="ir.ui.view">
+        <field name="name">product.brand.filter</field>
+        <field name="model">product.brand</field>
+        <field name="arch" type="xml">
+            <search string="Search Product Brand">
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="view_product_brand_tree" model="ir.ui.view">
+        <field name="name">product.brand.tree</field>
+        <field name="model">product.brand</field>
+        <field name="arch" type="xml">
+            <tree string="product.brand">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_product_brand" model="ir.actions.act_window">
+        <field name="name">Product Brands</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">product.brand</field>
+        <field name="view_id" ref="view_product_brand_tree"/>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Product Brands" id="menu_product_brand" action="action_product_brand" parent="sale.prod_config_main"/>
+
+</odoo>
