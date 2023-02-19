@@ -147,14 +147,15 @@ PivotView.include({
                 field       = self.$search_date.find('.select_field_date').val();
 
             var l10n = _t.database.parameters;
+            var time_string = time.strftime_to_moment_format(l10n.date_format + " " + l10n.time_format);
             if (start_date) {
-                var d = new Date(start_date);
+                var d = moment(start_date, time_string).toDate();
                 var nowUtc = new Date( d.getTime() + (d.getTimezoneOffset() * 60000));
                 start_date = self.js_date(nowUtc);
                 domain.push([field, '>=', start_date]);
             }
             if (end_date) {
-                var d = new Date(end_date);
+                var d = moment(end_date, time_string).toDate();
                 var nowUtc = new Date( d.getTime() + ((d.getTimezoneOffset() + (24 * 60)) * 60000));
                 end_date = self.js_date(nowUtc);
                 domain.push([field, '<=', end_date]);
