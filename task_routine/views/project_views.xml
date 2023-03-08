@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="edit_project" model="ir.ui.view">
+        <field name="name">daily_routine.edit_project</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.edit_project"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="run_manually_task" string="Run Manually" type="object" class="btn-secondary"
+                        groups="task_routine.group_routine_manager"
+                        invisible="not context.get('routine')"/>
+            </xpath>
+            <field name="user_id" position="after">
+                <field name="user_ids" class="o_task_user_field" options="{'no_open': True, 'no_quick_create': True}"
+                       widget="many2many_avatar_user" invisible="not context.get('routine')"
+                       domain="[('share', '=', False), ('active', '=', True)]"/>
+            </field>
+            <xpath expr="//page[last()]" position="after">
+                <page name="recurrence" string="Recurrence" invisible="not context.get('routine')">
+                    <group>
+                        <field name="recurrence_id" required="context.get('routine')"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_project" model="ir.ui.view">
+        <field name="name">daily_routine.view_project</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.view_project"/>
+        <field name="arch" type="xml">
+            <field name="user_id" position="before">
+                <field name="user_ids" widget="many2many_avatar_user"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="open_view_routine_all" model="ir.actions.act_window">
+        <field name="name">Routines</field>
+        <field name="res_model">project.project</field>
+        <field name="domain">[('recurrence_id', '!=', False)]</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="project.view_project_kanban"/>
+        <field name="search_view_id" ref="project.view_project_project_filter"/>
+        <field name="target">main</field>
+        <field name="context">{'routine': True}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No routine found. Let's create one!
+            </p>
+            <p>
+                Create routine to organize your tasks. Define a different workflow for each project.
+            </p>
+        </field>
+    </record>
+
+    <menuitem name="Routines"
+        id="routine_project_menu"
+        sequence="10" action="task_routine.open_view_routine_all"
+        parent="routine_main_menu"/>
+
+</odoo>

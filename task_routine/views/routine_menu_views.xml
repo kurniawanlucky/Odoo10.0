@@ -1,0 +1,16 @@
+<odoo>
+    <!-- MAIN MENU -->
+    <menuitem name="Routine"
+        id="routine_main_menu"
+        sequence="125"
+        groups="task_routine.group_routine_user"
+        web_icon="task_routine,static/description/icon.svg"/>
+
+    <!-- HEADER: CONFIGURATION -->
+    <menuitem name="Configuration"
+        id="menu_routine_configuration"
+        sequence="99"
+        parent="routine_main_menu"
+        groups="task_routine.group_routine_manager"/>
+
+</odoo>

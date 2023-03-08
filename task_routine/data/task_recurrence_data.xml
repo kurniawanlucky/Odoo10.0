@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Event stages -->
+        <record id="recurrence_every_day" model="project.task.recurrence">
+            <field name="name">Repeat Every Day</field>
+            <field name="repeat_unit">week</field>
+            <field name="repeat_interval">1</field>
+            <field name="repeat_type">forever</field>
+            <field name="repeat_number">-1</field>
+            <field name="mon" eval="True"/>
+            <field name="tue" eval="True"/>
+            <field name="wed" eval="True"/>
+            <field name="thu" eval="True"/>
+            <field name="fri" eval="True"/>
+        </record>
+    </data>
+</odoo>
