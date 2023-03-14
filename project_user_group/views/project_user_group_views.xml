@@ -1,0 +1,48 @@
+<odoo>
+    <record id="project_user_group_view_form" model="ir.ui.view">
+        <field name="name">project.user.group.view.form</field>
+        <field name="model">project.user.group</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <h1><field name="name" placeholder="Group Name"/></h1>
+                    <group>
+                        <field name="description" placeholder="Add a description..." nolabel="1" colspan="2"/>
+                    </group>
+                    <notebook>
+                        <page name="user" string="Users">
+                            <field name="user_ids" options="{'no_create': True}">
+                                <tree string="Users">
+                                    <field name="name"/>
+                                    <field name="email"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="project_user_group_view_tree" model="ir.ui.view">
+        <field name="name">project.user.group.view.tree</field>
+        <field name="model">project.user.group</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="project_user_group_configure" model="ir.actions.act_window">
+        <field name="name">Group</field>
+        <field name="res_model">project.user.group</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="project_user_group_view_tree"/>
+    </record>
+
+    <menuitem name="Group"
+        id="project_user_group_menu"
+        sequence="8" action="project_user_group.project_user_group_configure"
+        parent="project.menu_project_config"/>
+</odoo>
