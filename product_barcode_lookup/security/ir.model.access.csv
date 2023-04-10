@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_barcode_lookup_user,access.barcode.lookup.user,model_barcode_lookup,product_barcode_lookup.group_barcode_lookup_users,1,1,1,0
+access_barcode_lookup_manager,access.barcode.lookup.manager,model_barcode_lookup,product_barcode_lookup.group_barcode_lookup_managers,1,1,1,1
+access_wizard_barcode_lookup_user,access.wizard.barcode.lookup.user,model_wizard_barcode_lookup,product_barcode_lookup.group_barcode_lookup_users,1,1,1,0
+access_wizard_barcode_lookup_value_user,access.wizard.barcode.lookup.value.user,model_wizard_barcode_lookup_value,product_barcode_lookup.group_barcode_lookup_users,1,1,1,0

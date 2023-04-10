@@ -1,0 +1,38 @@
+from odoo import api, fields, models
+
+
+class WizardBarcodeLookupValue(models.TransientModel):
+    _name = 'wizard.barcode.lookup.value'
+
+    wizard_id = fields.Many2one("wizard.barcode.lookup")
+    barcode = fields.Char('Barcode')
+    barcode_formats = fields.Char('Barcode Formats')
+    mpn = fields.Char('MPN')
+    model = fields.Char('Model')
+    asin = fields.Char('ASIN')
+    title = fields.Char('Title')
+    category = fields.Char('Category')
+    manufacturer = fields.Char('Manufacturer')
+    brand = fields.Char('Brand')
+    contributors = fields.Char('Contributors')
+    age_group = fields.Char('Age Group')
+    ingredients = fields.Char('Ingredients')
+    nutrition_facts = fields.Char('Nutrition Facts')
+    color = fields.Char('Color')
+    gender = fields.Char('Gender')
+    material = fields.Char('Material')
+    pattern = fields.Char('Pattern')
+    energy_efficiency_rating = fields.Char('Energy Efficiency Rating')
+    multipack = fields.Char('Multipack')
+    size = fields.Char('Size')
+    length = fields.Char('Length')
+    width = fields.Char('Width')
+    height = fields.Char('Height')
+    weight = fields.Char('Weight')
+    release_date = fields.Char('Release Date')
+    description = fields.Char('Description')
+    features = fields.Char('Features')
+    images = fields.Char('Images')
+    stores = fields.Char('Stores')
+    reviews = fields.Char('Reviews')
+    last_update = fields.Char('Last Update')

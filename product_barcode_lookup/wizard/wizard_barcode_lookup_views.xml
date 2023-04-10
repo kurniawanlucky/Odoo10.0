@@ -1,0 +1,57 @@
+<odoo>
+    <record id="wizard_barcode_lookup_view_form" model="ir.ui.view">
+        <field name="name">barcode.lookup.view.form</field>
+        <field name="model">wizard.barcode.lookup</field>
+        <field name="priority">20</field>
+        <field name="arch" type="xml">
+            <form string="Search">
+                <header>
+                    <button name="action_search_product" string="Search" type="object" class="btn-primary" data-hotkey="s"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="barcode_val"/>
+                            <field name="mpn_val"/>
+                            <field name="asin_val"/>
+                            <field name="title_val"/>
+                            <field name="category_val"/>
+                            <field name="manufacturer_val"/>
+                            <field name="brand_val"/>
+                            <field name="search_val"/>
+                        </group>
+                        <group>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Values" name="value">
+                            <field name="wizard_barcode_lookup_value_ids">
+                                <tree>
+                                    <field name="barcode"/>
+                                    <field name="barcode_formats"/>
+                                    <field name="mpn"/>
+                                    <field name="model"/>
+                                    <field name="asin"/>
+                                    <field name="title"/>
+                                    <field name="category"/>
+                                    <field name="manufacturer"/>
+                                    <field name="brand"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+<!--                    <footer>-->
+<!--                        <button name="action_search_product" string="Search" type="object" class="btn-primary" data-hotkey="s"/>-->
+<!--                        <button string="Cancel" class="btn-secondary" special="cancel" data-hotkey="z"/>-->
+<!--                    </footer>-->
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_view_wizard_barcode_lookup" model="ir.actions.act_window">
+        <field name="name">Barcode Lookup</field>
+        <field name="res_model">wizard.barcode.lookup</field>
+        <field name="view_mode">form</field>
+    </record>
+</odoo>

@@ -1,0 +1,52 @@
+<odoo>
+    <!-- Under Technical/Product -->
+    <menuitem name="Product"
+        id="product_menu_technical"
+        parent="base.menu_custom"
+        sequence="1"/>
+
+    <record id="barcode_lookup_view_form" model="ir.ui.view">
+        <field name="name">barcode.lookup.view.form</field>
+        <field name="model">barcode.lookup</field>
+        <field name="priority">20</field>
+        <field name="arch" type="xml">
+            <form string="Barcode Lookup">
+                <header>
+                    <button name="%(action_view_wizard_barcode_lookup)d" string="Search" type="action"
+                            groups="product_barcode_lookup.group_barcode_lookup_users"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="url"/>
+                        </group>
+                        <group>
+                            <field name="api_key"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_barcode_lookup_tree">
+        <field name="name">barcode.lookup.tree</field>
+        <field name="model">barcode.lookup</field>
+        <field name="priority">20</field>
+        <field name="arch" type="xml">
+            <tree string="Barcode">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_view_config_barcode_lookup" model="ir.actions.act_window">
+        <field name="name">Barcode Lookup</field>
+        <field name="res_model">barcode.lookup</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Barcode Lookup" id="barcode_menu_technical" parent="product_menu_technical"
+              action="action_view_config_barcode_lookup" sequence="1"/>
+</odoo>
