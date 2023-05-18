@@ -1,0 +1,20 @@
+<odoo>
+    <record id="view_server_action_form" model="ir.ui.view">
+        <field name="name">cron_history.view_server_action_form</field>
+        <field name="model">ir.cron</field>
+        <field name="inherit_id" ref="base.ir_cron_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[last()]" position="after">
+                <page name="history" string="History">
+                    <field name="cron_history_ids">
+                        <tree default_order="id desc">
+                            <field name="start_time"/>
+                            <field name="finish_time"/>
+                            <field name="duration"/>
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
